@@ -18,15 +18,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|------+------+------+------+------+------|
  * | Shift|   Z  |   X  |   C  |   V  |   B  |   N  |   M  |   ,  |   .  |   /  |Shift |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |  Fn  | Ctrl | Alt  | Cmd  |Lower |    Space    |Raise | Left |  Up  | Down |Right |
+ * | Ctrl |  Fn  | Alt  | Cmd  |Lower |    Space    |Raise | Left | Down |  Up  |Right |
  * `-----------------------------------------------------------------------------------'
  */
 [0] = LAYOUT_preonic_1x2uC(
-  KC_ESC,           KC_1,       KC_2,       KC_3,       KC_4,       KC_5,       KC_6,       KC_7,       KC_8,       KC_9,       KC_0,       KC_BSPC,
-  KC_TAB,           KC_Q,       KC_W,       KC_E,       KC_R,       KC_T,       KC_Y,       KC_U,       KC_I,       KC_O,       KC_P,       KC_ENT,
-  LT(2, KC_CAPS),   KC_A,       KC_S,       KC_D,       KC_F,       KC_G,       KC_H,       KC_J,       KC_K,       KC_L,       KC_SCLN,    KC_QUOT,
-  KC_LSFT,          KC_Z,       KC_X,       KC_C,       KC_V,       KC_B,       KC_N,       KC_M,       KC_COMM,    KC_DOT,     KC_SLSH,      KC_RSFT,
-  KC_LCTL,          MO(3),      KC_LALT,    KC_LGUI,    MO(2),      KC_SPC,     MO(4),      KC_LEFT,    KC_UP,      KC_DOWN,    KC_RGHT
+  KC_ESC,           KC_1,   KC_2,       KC_3,       KC_4,   KC_5,       KC_6,       KC_7,       KC_8,       KC_9,       KC_0,       KC_BSPC,
+  KC_TAB,           KC_Q,   KC_W,       KC_E,       KC_R,   KC_T,       KC_Y,       KC_U,       KC_I,       KC_O,       KC_P,       KC_ENT,
+  LT(3, KC_CAPS),   KC_A,   KC_S,       KC_D,       KC_F,   KC_G,       KC_H,       KC_J,       KC_K,       KC_L,       KC_SCLN,    KC_QUOT,
+  KC_LSFT,          KC_Z,   KC_X,       KC_C,       KC_V,   KC_B,       KC_N,       KC_M,       KC_COMM,    KC_DOT,     KC_SLSH,    KC_RSFT,
+  KC_LCTL,          MO(4),  KC_LALT,    KC_LGUI,    MO(3),  KC_SPC,     MO(5),      KC_LEFT,    KC_DOWN,    KC_UP,      KC_RGHT
 ),
 
 /* Game
@@ -47,8 +47,30 @@ KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
 KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
 KC_CAPS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
 KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-KC_LCTL, KC_BSLS, KC_LGUI, KC_LALT, KC_SPC,  KC_TRNS, MO(5),   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS
+KC_LCTL, KC_BSLS, KC_LGUI, KC_LALT, KC_SPC,  KC_TRNS, MO(6),   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS
 ),
+
+/* Colemak
+ * ,-----------------------------------------------------------------------------------.
+ * | Esc  |   1  |   2  |   3  |   4  |   5  |   6  |   7  |   8  |   9  |   0  | Bksp |
+ * |------+------+------+------+------+------+------+------+------+------+------+------|
+ * | Tab  |   Q  |   W  |   F  |   P  |   G  |   J  |   L  |   U  |   Y  |   ;  | Enter|
+ * |------+------+------+------+------+-------------+------+------+------+------+------|
+ * | Caps |   A  |   R  |   S  |   T  |   D  |   H  |   N  |   E  |   I  |   O  |  "   |
+ * |------+------+------+------+------+------|------+------+------+------+------+------|
+ * | Shift|   Z  |   X  |   C  |   V  |   B  |   K  |   M  |   ,  |   .  |   /  |Shift |
+ * |------+------+------+------+------+------+------+------+------+------+------+------|
+ * | Ctrl |  Fn  | Alt  | Cmd  |Lower |    Space    |Raise | Left | Down |  Up  |Right |
+ * `-----------------------------------------------------------------------------------'
+ */
+[2] = LAYOUT_preonic_1x2uC(
+  KC_ESC,           KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_BSPC,
+  KC_TAB,           KC_Q,    KC_W,    KC_F,    KC_P,    KC_G,    KC_J,    KC_L,    KC_U,    KC_Y,    KC_SCLN, KC_ENT,
+  LT(3, KC_CAPS),   KC_A,    KC_R,    KC_S,    KC_T,    KC_D,    KC_H,    KC_N,    KC_E,    KC_I,    KC_O,    KC_QUOT,
+  KC_LSFT,          KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_K,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT,
+  KC_LCTL,          MO(4),   KC_LALT, KC_LGUI, MO(3),   KC_SPC,  MO(5),   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT
+),
+
 
 /* Symbols
  * ,-----------------------------------------------------------------------------------.
@@ -60,15 +82,15 @@ KC_LCTL, KC_BSLS, KC_LGUI, KC_LALT, KC_SPC,  KC_TRNS, MO(5),   KC_TRNS, KC_TRNS,
  * |------+------+------+------+------+------|------+------+------+------+------+------|
  * |      |  `   |      |      |      |      |      |   |  |   <  |   >  |   `  |      |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |      |      |      |      |      |    Space    |      | Left |  Up  | Down |Right |
+ * |      |      |      |      | VVV  |    Space    |      | Left |  Up  | Down |Right |
  * `-----------------------------------------------------------------------------------'
  */
-[2] = LAYOUT_preonic_1x2uC(
+[3] = LAYOUT_preonic_1x2uC(
 KC_NO,      KC_F1,      KC_F2,      KC_F3,      KC_F4,      KC_F5,      KC_F6,      KC_NO,      KC_LPRN,    KC_RPRN,    KC_NO,    KC_DEL,
 KC_NO,      KC_F7,      KC_F8,      KC_F9,      KC_F10,     KC_F11,     KC_F12,     KC_MINS,    KC_LBRC,    KC_RBRC,    KC_EQL,   KC_NO,
 KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_UNDS,    KC_LCBR,    KC_RCBR,    KC_DLR,   KC_BSLS,
 KC_LSFT,    KC_GRV,     KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_PIPE,    KC_LT,      KC_GT,      KC_GRV,   KC_NO,
-KC_NO,      KC_LCTL,    KC_LALT,    KC_LGUI,    KC_TRNS,    KC_SPC,     MO(5),      KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS
+KC_NO,      KC_LCTL,    KC_LALT,    KC_LGUI,    KC_TRNS,    KC_SPC,     MO(6),      KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS
 ),
 
 /* 3 - Numbers
@@ -81,10 +103,10 @@ KC_NO,      KC_LCTL,    KC_LALT,    KC_LGUI,    KC_TRNS,    KC_SPC,     MO(5),  
  * |------+------+------+------+------+------|------+------+------+------+------+------|
  * |      |      |      |      |      |      |   %  |   1  |   2  |   3  |   .  |   =  |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |      |      |      |      |  VVV |    Space    |Adjust|   0  |   .  |      |      |
+ * |      |  VVV |      |      |      |    Space    |Adjust|   0  |   .  |      |      |
  * `-----------------------------------------------------------------------------------'
  */
-[3] = LAYOUT_preonic_1x2uC(
+[4] = LAYOUT_preonic_1x2uC(
 KC_NO, KC_F1,   KC_F2,      KC_F3,      KC_F4,      KC_F5,   KC_F6,    KC_F7,  KC_F8,      KC_F9,   KC_F10,     KC_DEL,
 KC_NO, KC_NO,   KC_NO,      KC_NO,      KC_NO,      KC_NO,   KC_PSLS,  KC_P7,  KC_P8,      KC_P9,   KC_PAST,    KC_ENT,
 KC_NO, KC_NO,   KC_NO,      KC_NO,      KC_NO,      KC_NO,   KC_PMNS,  KC_P4,  KC_P5,      KC_P6,   KC_PPLS,    KC_NO,
@@ -106,12 +128,12 @@ KC_NO, KC_TRNS, KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS, KC_TRNS,  KC_P0,  K
 * |      |      |      |      |Adjust|    Space    |  VVV |      |      |      |      |
 * `-----------------------------------------------------------------------------------'
 */
-[4] = LAYOUT_preonic_1x2uC(
+[5] = LAYOUT_preonic_1x2uC(
 KC_GRV,     KC_F1,      KC_F2,      KC_F3,      KC_F4,      KC_F5,      KC_F6,      KC_F7,      KC_F8,      KC_F9,      KC_F10,   KC_DEL,
 KC_NO,      KC_EXLM,    KC_AT,      KC_HASH,    KC_DLR,     KC_PERC,    KC_NO,      KC_HOME,    KC_UP,      KC_END,     KC_PGUP,  KC_NO,
 KC_NO,      KC_MPLY,    KC_MRWD,    KC_MFFD,    KC_MUTE,    KC_VOLD,    KC_VOLU,    KC_LEFT,    KC_DOWN,    KC_RIGHT,   KC_PGDN,  KC_NO,
 KC_LSFT,    KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,    KC_RSFT,
-KC_NO,      KC_TRNS,    KC_TRNS,    KC_TRNS,    MO(5),      KC_NO,      KC_NO,      KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS
+KC_NO,      KC_TRNS,    KC_TRNS,    KC_TRNS,    MO(6),      KC_NO,      KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS
 ),
 
 /* Adjust
@@ -120,18 +142,18 @@ KC_NO,      KC_TRNS,    KC_TRNS,    KC_TRNS,    MO(5),      KC_NO,      KC_NO,  
 * |------+------+------+------+------+------+------+------+------+------+------+------|
 * |      |Reset |Debug |      |      |      |      |      |      |      |      |      |
 * |------+------+------+------+------+-------------+------+------+------+------+------|
-* |      |      |      |Au on |Auoff | Game | Mac  | Win  |      |      |      |      |
+* |      |      |      |Au on |Auoff | Mac  | Win  |QWERTY| Game |Colmak|      |      |
 * |------+------+------+------+------+------|------+------+------+------+------+------|
-* |      |MV Dwn|MV up |Mu on |Mu off|BL Tog|RGB Tg|Dfault|      |      |      |      |
+* |      |MV Dwn|MV up |Mu on |Mu off|BL Tog|RGBTg||      |      |      |      |      |
 * |------+------+------+------+------+------+------+------+------+------+------+------|
 * |      |      |      |      |  VVV |    Space    |  VVV |      |      |      |      |
 * `-----------------------------------------------------------------------------------'
 */
-[5] = LAYOUT_preonic_1x2uC(
-KC_NO,  KC_NO,   KC_NO,     KC_NO,  KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO, KC_NO, KC_NO, KC_NO,
-KC_NO,  RESET,   DEBUG,     KC_NO,  KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO, KC_NO, KC_NO, KC_NO,
-KC_NO,  KC_NO,   MU_MOD,    AU_ON,  AU_OFF,     DF(1),      AG_NORM,    AG_SWAP,    KC_NO, KC_NO, KC_NO, KC_NO,
-KC_NO,  MUV_DE,  MUV_IN,    MU_ON,  MU_OFF,     BL_TOGG,    RGB_TOG,    DF(0),      KC_NO, KC_NO, KC_NO, KC_NO,
-KC_NO,  KC_NO,   KC_NO,     KC_NO,  KC_TRNS,    KC_NO,      KC_TRNS,    KC_NO,      KC_NO, KC_NO, KC_NO
-)
+[6] = LAYOUT_preonic_1x2uC(
+KC_NO,  KC_NO,   KC_NO,     KC_NO,  KC_NO,      KC_NO,      KC_NO,      KC_NO,  KC_NO, KC_NO, KC_NO, KC_NO,
+KC_NO,  RESET,   DEBUG,     KC_NO,  KC_NO,      KC_NO,      KC_NO,      KC_NO,  KC_NO, KC_NO, KC_NO, KC_NO,
+KC_NO,  KC_NO,   MU_MOD,    AU_ON,  AU_OFF,     AG_NORM,    AG_SWAP,    DF(0),  DF(1), DF(2), KC_NO, KC_NO,
+KC_NO,  MUV_DE,  MUV_IN,    MU_ON,  MU_OFF,     BL_TOGG,    RGB_TOG,    KC_NO,  KC_NO, KC_NO, KC_NO, KC_NO,
+KC_NO,  KC_NO,   KC_NO,     KC_NO,  KC_TRNS,    KC_NO,      KC_TRNS,    KC_NO,  KC_NO, KC_NO, KC_NO
+),
 };
