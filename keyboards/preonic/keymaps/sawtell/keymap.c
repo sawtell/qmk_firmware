@@ -139,9 +139,9 @@ KC_NO, KC_TRNS, KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_P0,   KC_TRNS,  KC_P0,  K
 
 /* 5 - Raise (left symbols)
 * ,-----------------------------------------------------------------------------------.
-* |   §  |  F1  |  F2  |  F3  |  F4  |  F5  |  F6  |  F7  |  F8  |  F9  | F10  | Del  |
+* |   §  |      |      |      |      |      |      |      |      |      |      | Del  |
 * |------+------+------+------+------+------+------+------+------+------+------+------|
-* |      |  F11 |  F12 |   ^  |   [  |      |      | Home |  Up  |  End | PgUp |      |
+* |      |      |   ^  |   *  |   [  |   %  |      | Home |  Up  |  End | PgUp |      |
 * |------+------+------+------+------+-------------+------+------+------+------+------|
 * |      |   !  |   &  |   $  |   (   |  <  |      | Left | Down |Right |PgDown|      |
 * |------+------+------+------+------+------|------+------+------+------+------+------|
@@ -151,8 +151,8 @@ KC_NO, KC_TRNS, KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_P0,   KC_TRNS,  KC_P0,  K
 * `-----------------------------------------------------------------------------------'
 */
 [5] = LAYOUT_preonic_1x2uC(
-KC_NUBS,    KC_F1,      KC_F2,      KC_F3,      KC_F4,      KC_F5,      KC_F6,      KC_F7,      KC_F8,      KC_F9,      KC_F10,   KC_DEL,
-KC_NO,      KC_F11,     KC_F12,     KC_CIRC,    KC_LBRC,    KC_NO,      KC_NO,      KC_HOME,    KC_UP,      KC_END,     KC_PGUP,  KC_NO,
+KC_NUBS,    KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,    KC_DEL,
+KC_NO,      KC_NO,      KC_CIRC,    KC_PAST,    KC_LBRC,    KC_PERC,    KC_NO,      KC_HOME,    KC_UP,      KC_END,     KC_PGUP,  KC_NO,
 KC_NO,      KC_EXLM,    KC_AMPR,    KC_DLR,     KC_LPRN,    KC_LT,      KC_NO,      KC_LEFT,    KC_DOWN,    KC_RIGHT,   KC_PGDN,  KC_NO,
 KC_LSFT,    KC_GRV,     KC_NO,      KC_NO,      KC_LCBR,    KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,    KC_RSFT,
 KC_NO,      KC_TRNS,    KC_TRNS,    KC_TRNS,    MO(6),      KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS
@@ -181,9 +181,9 @@ KC_NO,  KC_NO,   KC_NO,     KC_NO,  KC_TRNS,    KC_NO,      KC_TRNS,    KC_NO,  
 
 /* 7 - Fn extras
 * ,-----------------------------------------------------------------------------------.
-* |      |      |      |      |      |      |      |      |      |      |      |      |
+* |      |  F1  |  F2  |  F3  |  F4  |  F5  |  F6  |  F7  |  F8  |  F9  | F10  | Del  |
 * |------+------+------+------+------+------+------+------+------+------+------+------|
-* |      |      |      |      |      |      |      |      |      |      |      |      |
+* |      |  F11 |  F12 |      |      |      |      |      |      |      |      |      |
 * |------+------+------+------+------+-------------+------+------+------+------+------|
 * |      | Play | Prev | Next | Mute |VolDwn| VolUp|      |      |      |      |      |
 * |------+------+------+------+------+------|------+------+------+------+------+------|
@@ -193,8 +193,8 @@ KC_NO,  KC_NO,   KC_NO,     KC_NO,  KC_TRNS,    KC_NO,      KC_TRNS,    KC_NO,  
 * `-----------------------------------------------------------------------------------'
 */
 [7] = LAYOUT_preonic_1x2uC(
-KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,
-KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_HOME,    KC_UP,      KC_END,     KC_PGUP,    KC_NO,
+KC_NO,      KC_F1,      KC_F2,      KC_F3,      KC_F4,      KC_F5,      KC_F6,      KC_F7,      KC_F8,      KC_F9,      KC_F10,      KC_NO,
+KC_NO,      KC_F11,     KC_F12,     KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_HOME,    KC_UP,      KC_END,     KC_PGUP,    KC_NO,
 KC_NO,      KC_MPLY,    KC_MRWD,    KC_MFFD,    KC_MUTE,    KC_VOLD,    KC_VOLU,    KC_LEFT,    KC_DOWN,    KC_RIGHT,   KC_PGDN,    KC_NO,
 KC_LSFT,    KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_MUTE,    KC_NO,      KC_NO,      KC_RSFT,
 KC_NO,      KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_MPLY,    KC_TRNS,    KC_MRWD,    KC_VOLD,    KC_VOLU,    KC_MFFD
