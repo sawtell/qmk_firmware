@@ -96,7 +96,7 @@ KC_NO,      KC_LCTL,    KC_LALT,    KC_LGUI,    KC_TRNS,    KC_SPC,     MO(6),  
 
 /* 3 - Symbols
  * ,-----------------------------------------------------------------------------------.
- * |      |      |      |      |      |      |      |      |      |      |      | Del  |
+ * |   §  |   !  |   @  |   £  |   $  |   %  |   ^  |   &  |   *  |   (  |   )  | Del  |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * |      |      |      |      |      |      |      |   ]  |   -  |   >  |   =  |      |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
@@ -108,7 +108,7 @@ KC_NO,      KC_LCTL,    KC_LALT,    KC_LGUI,    KC_TRNS,    KC_SPC,     MO(6),  
  * `-----------------------------------------------------------------------------------'
  */
 [3] = LAYOUT_preonic_1x2uC(
-KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,    KC_DEL,
+KC_NUBS,    KC_EXLM,    KC_AT,      RSFT(KC_P3),  KC_DLR,      KC_PERC,      KC_CIRC,      KC_AMPR,      KC_PAST,      KC_LPRN,      KC_RPRN,    KC_DEL,
 KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_RBRC,    KC_MINS,    KC_GT,      KC_EQL,   KC_NO,
 KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_GT,      KC_RPRN,    KC_UNDS,    KC_PIPE,    KC_BSLS,  KC_PAST,
 KC_LSFT,    KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_RCBR,    KC_LT,      KC_GT,      KC_NO,    KC_NO,
@@ -139,7 +139,7 @@ KC_NO, KC_TRNS, KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_P0,   KC_TRNS,  KC_P0,  K
 
 /* 5 - Raise (left symbols)
 * ,-----------------------------------------------------------------------------------.
-* |   §  |      |      |      |      |      |      |      |      |      |      | Del  |
+* |   §  |   !  |   @  |   £  |   $  |   %  |   ^  |   &  |   *  |   (  |   )  | Del  |
 * |------+------+------+------+------+------+------+------+------+------+------+------|
 * |      |      |   ^  |   *  |   [  |   %  |      | Home |  Up  |  End | PgUp |      |
 * |------+------+------+------+------+-------------+------+------+------+------+------|
@@ -151,7 +151,7 @@ KC_NO, KC_TRNS, KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_P0,   KC_TRNS,  KC_P0,  K
 * `-----------------------------------------------------------------------------------'
 */
 [5] = LAYOUT_preonic_1x2uC(
-KC_NUBS,    KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,    KC_DEL,
+KC_NUBS,    KC_EXLM,    KC_AT,      RSFT(KC_P3),KC_DLR,     KC_PERC,      KC_CIRC,      KC_AMPR,      KC_PAST,      KC_LPRN,      KC_RPRN,    KC_DEL,
 KC_NO,      KC_NO,      KC_CIRC,    KC_PAST,    KC_LBRC,    KC_PERC,    KC_NO,      KC_HOME,    KC_UP,      KC_END,     KC_PGUP,  KC_NO,
 KC_NO,      KC_EXLM,    KC_AMPR,    KC_DLR,     KC_LPRN,    KC_LT,      KC_NO,      KC_LEFT,    KC_DOWN,    KC_RIGHT,   KC_PGDN,  KC_NO,
 KC_LSFT,    KC_GRV,     KC_NO,      KC_NO,      KC_LCBR,    KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,    KC_RSFT,
@@ -200,3 +200,4 @@ KC_LSFT,    KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,  
 KC_NO,      KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_MPLY,    KC_TRNS,    KC_MRWD,    KC_VOLD,    KC_VOLU,    KC_MFFD
 ),
 };
+
