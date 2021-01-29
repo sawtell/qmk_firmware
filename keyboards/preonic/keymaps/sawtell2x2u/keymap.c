@@ -95,7 +95,7 @@ KC_LCTL, KC_BSLS, KC_LGUI, KC_LALT, KC_SPC,  LT(7,KC_SPC),   KC_TRNS, KC_TRNS, K
  * | Ctrl |  Fn  | Alt  | Cmd  || Enter/Lower | Space/Raise | Left | Down |  Up  |Right |
  * `-----------------------------------------------------------------------------------'
  */
-[3] = LAYOUT_preonic_1x2uC(
+[3] = LAYOUT_preonic_2x2u(
   KC_ESC,           KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_BSPC,
   KC_TAB,           KC_Q,    KC_W,    KC_F,    KC_P,    KC_B,    KC_J,    KC_L,    KC_U,    KC_Y,    KC_SCLN, KC_ENT,
   LT(5, KC_CAPS),   KC_A,    KC_R,    KC_S,    KC_T,    KC_G,    KC_M,    KC_N,    KC_E,    KC_I,    KC_O,    KC_QUOT,
@@ -125,7 +125,7 @@ KC_LSFT,    KC_GRV,     KC_NO,      KC_NO,      KC_LCBR,    KC_NO,      KC_NO,  
 KC_LCTL,    KC_NO,      KC_LALT,    KC_LGUI,    KC_TRNS,    LT(7,KC_SPC),           KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS
 ),
 
-/* 4 - Numbers
+/* 5 - Numbers
  * ,-----------------------------------------------------------------------------------.
  * |      |  F1  |  F2  |  F3  |  F4  |  F5  |  F6  |  F7  |  F8  |  F9  | F10  | BkSp |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
@@ -147,7 +147,7 @@ KC_NO, KC_TRNS, KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_P0,   KC_PDOT,  KC_NO,  K
 ),
 
 
-/* 5 - Raise (left symbols)
+/* 6 - Raise (left symbols)
 * ,-----------------------------------------------------------------------------------.
 * |   §  |   !  |   @  |   £  |   $  |   %  |   ^  |   &  |   *  |   (  |   )  | Del  |
 * |------+------+------+------+------+------+------+------+------+------+------+------|
@@ -168,7 +168,7 @@ KC_LSFT,    KC_GRV,     KC_NO,      KC_NO,      KC_LCBR,    KC_NO,      KC_NO,  
 KC_LCTL,    KC_NO,      KC_LALT,    KC_LGUI,    LT(7,KC_ENT),           KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS
 ),
 
-/* 6 - Adjust
+/* 7 - Adjust
 * ,-----------------------------------------------------------------------------------.
 * |      |      |      |      |      |      |      |      |      |      |      |      |
 * |------+------+------+------+------+------+------+------+------+------+------+------|
@@ -189,7 +189,7 @@ KC_NO,  MUV_DE,  MUV_IN,    MU_ON,  MU_OFF,     BL_TOGG,    RGB_TOG,    KC_NO,  
 KC_NO,  KC_NO,   KC_NO,     KC_NO,  KC_TRNS,    KC_TRNS,    KC_NO,      KC_NO,  KC_NO, KC_NO
 ),
 
-/* 7 - Fn extras
+/* 8 - Fn extras
 * ,-----------------------------------------------------------------------------------.
 * |      |  F1  |  F2  |  F3  |  F4  |  F5  |  F6  |  F7  |  F8  |  F9  | F10  | Del  |
 * |------+------+------+------+------+------+------+------+------+------+------+------|
